@@ -1,4 +1,4 @@
-# OpenAPIClient-php
+# RaynetCRM PHP SDK
 
 Cloud CRM REST API je programové rozhraní systému RAYNET CRM, které umožňuje pracovat s daty uvnitř CRM z aplikací třetích stran. Komunikace probíhá standardním protokolem HTTP s ohledem na [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) principy.
 ## Připojení k RAYNET CRM

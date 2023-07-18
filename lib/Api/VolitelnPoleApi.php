@@ -417,7 +417,7 @@ class VolitelnPoleApi
 
             } elseif (stripos($headers['Content-Type'], 'application/json') !== false) {
                 # if Content-Type contains "application/json", json_encode the form parameters
-                $httpBody = \GuzzleHttp\Utils::jsonEncode($formParams);
+                $httpBody = json_encode($formParams);
             } else {
                 // for HTTP post (form)
                 $httpBody = ObjectSerializer::buildQuery($formParams);
@@ -721,7 +721,7 @@ class VolitelnPoleApi
         if (isset($custom_field_config_edit_dto)) {
             if (stripos($headers['Content-Type'], 'application/json') !== false) {
                 # if Content-Type contains "application/json", json_encode the body
-                $httpBody = \GuzzleHttp\Utils::jsonEncode(ObjectSerializer::sanitizeForSerialization($custom_field_config_edit_dto));
+                $httpBody = json_encode(ObjectSerializer::sanitizeForSerialization($custom_field_config_edit_dto));
             } else {
                 $httpBody = $custom_field_config_edit_dto;
             }
@@ -742,7 +742,7 @@ class VolitelnPoleApi
 
             } elseif (stripos($headers['Content-Type'], 'application/json') !== false) {
                 # if Content-Type contains "application/json", json_encode the form parameters
-                $httpBody = \GuzzleHttp\Utils::jsonEncode($formParams);
+                $httpBody = json_encode($formParams);
             } else {
                 // for HTTP post (form)
                 $httpBody = ObjectSerializer::buildQuery($formParams);
@@ -1014,7 +1014,7 @@ class VolitelnPoleApi
 
             } elseif (stripos($headers['Content-Type'], 'application/json') !== false) {
                 # if Content-Type contains "application/json", json_encode the form parameters
-                $httpBody = \GuzzleHttp\Utils::jsonEncode($formParams);
+                $httpBody = json_encode($formParams);
             } else {
                 // for HTTP post (form)
                 $httpBody = ObjectSerializer::buildQuery($formParams);
@@ -1298,7 +1298,7 @@ class VolitelnPoleApi
         if (isset($custom_field_config_insert_dto)) {
             if (stripos($headers['Content-Type'], 'application/json') !== false) {
                 # if Content-Type contains "application/json", json_encode the body
-                $httpBody = \GuzzleHttp\Utils::jsonEncode(ObjectSerializer::sanitizeForSerialization($custom_field_config_insert_dto));
+                $httpBody = json_encode(ObjectSerializer::sanitizeForSerialization($custom_field_config_insert_dto));
             } else {
                 $httpBody = $custom_field_config_insert_dto;
             }
@@ -1319,7 +1319,7 @@ class VolitelnPoleApi
 
             } elseif (stripos($headers['Content-Type'], 'application/json') !== false) {
                 # if Content-Type contains "application/json", json_encode the form parameters
-                $httpBody = \GuzzleHttp\Utils::jsonEncode($formParams);
+                $httpBody = json_encode($formParams);
             } else {
                 // for HTTP post (form)
                 $httpBody = ObjectSerializer::buildQuery($formParams);
@@ -1623,7 +1623,7 @@ class VolitelnPoleApi
         if (isset($custom_field_enum_delete_dto)) {
             if (stripos($headers['Content-Type'], 'application/json') !== false) {
                 # if Content-Type contains "application/json", json_encode the body
-                $httpBody = \GuzzleHttp\Utils::jsonEncode(ObjectSerializer::sanitizeForSerialization($custom_field_enum_delete_dto));
+                $httpBody = json_encode(ObjectSerializer::sanitizeForSerialization($custom_field_enum_delete_dto));
             } else {
                 $httpBody = $custom_field_enum_delete_dto;
             }
@@ -1644,7 +1644,7 @@ class VolitelnPoleApi
 
             } elseif (stripos($headers['Content-Type'], 'application/json') !== false) {
                 # if Content-Type contains "application/json", json_encode the form parameters
-                $httpBody = \GuzzleHttp\Utils::jsonEncode($formParams);
+                $httpBody = json_encode($formParams);
             } else {
                 // for HTTP post (form)
                 $httpBody = ObjectSerializer::buildQuery($formParams);
@@ -1948,7 +1948,7 @@ class VolitelnPoleApi
         if (isset($custom_field_enum_edit_dto)) {
             if (stripos($headers['Content-Type'], 'application/json') !== false) {
                 # if Content-Type contains "application/json", json_encode the body
-                $httpBody = \GuzzleHttp\Utils::jsonEncode(ObjectSerializer::sanitizeForSerialization($custom_field_enum_edit_dto));
+                $httpBody = json_encode(ObjectSerializer::sanitizeForSerialization($custom_field_enum_edit_dto));
             } else {
                 $httpBody = $custom_field_enum_edit_dto;
             }
@@ -1969,7 +1969,7 @@ class VolitelnPoleApi
 
             } elseif (stripos($headers['Content-Type'], 'application/json') !== false) {
                 # if Content-Type contains "application/json", json_encode the form parameters
-                $httpBody = \GuzzleHttp\Utils::jsonEncode($formParams);
+                $httpBody = json_encode($formParams);
             } else {
                 // for HTTP post (form)
                 $httpBody = ObjectSerializer::buildQuery($formParams);
@@ -2281,7 +2281,7 @@ class VolitelnPoleApi
 
             } elseif (stripos($headers['Content-Type'], 'application/json') !== false) {
                 # if Content-Type contains "application/json", json_encode the form parameters
-                $httpBody = \GuzzleHttp\Utils::jsonEncode($formParams);
+                $httpBody = json_encode($formParams);
             } else {
                 // for HTTP post (form)
                 $httpBody = ObjectSerializer::buildQuery($formParams);
@@ -2585,7 +2585,7 @@ class VolitelnPoleApi
         if (isset($custom_field_enum_insert_dto)) {
             if (stripos($headers['Content-Type'], 'application/json') !== false) {
                 # if Content-Type contains "application/json", json_encode the body
-                $httpBody = \GuzzleHttp\Utils::jsonEncode(ObjectSerializer::sanitizeForSerialization($custom_field_enum_insert_dto));
+                $httpBody = json_encode(ObjectSerializer::sanitizeForSerialization($custom_field_enum_insert_dto));
             } else {
                 $httpBody = $custom_field_enum_insert_dto;
             }
@@ -2606,7 +2606,7 @@ class VolitelnPoleApi
 
             } elseif (stripos($headers['Content-Type'], 'application/json') !== false) {
                 # if Content-Type contains "application/json", json_encode the form parameters
-                $httpBody = \GuzzleHttp\Utils::jsonEncode($formParams);
+                $httpBody = json_encode($formParams);
             } else {
                 // for HTTP post (form)
                 $httpBody = ObjectSerializer::buildQuery($formParams);

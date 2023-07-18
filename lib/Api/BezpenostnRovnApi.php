@@ -334,7 +334,7 @@ class BezpenostnRovnApi
 
             } elseif (stripos($headers['Content-Type'], 'application/json') !== false) {
                 # if Content-Type contains "application/json", json_encode the form parameters
-                $httpBody = \GuzzleHttp\Utils::jsonEncode($formParams);
+                $httpBody = json_encode($formParams);
             } else {
                 // for HTTP post (form)
                 $httpBody = ObjectSerializer::buildQuery($formParams);
@@ -612,7 +612,7 @@ class BezpenostnRovnApi
 
             } elseif (stripos($headers['Content-Type'], 'application/json') !== false) {
                 # if Content-Type contains "application/json", json_encode the form parameters
-                $httpBody = \GuzzleHttp\Utils::jsonEncode($formParams);
+                $httpBody = json_encode($formParams);
             } else {
                 // for HTTP post (form)
                 $httpBody = ObjectSerializer::buildQuery($formParams);
@@ -876,7 +876,7 @@ class BezpenostnRovnApi
         if (isset($security_level_insert_dto)) {
             if (stripos($headers['Content-Type'], 'application/json') !== false) {
                 # if Content-Type contains "application/json", json_encode the body
-                $httpBody = \GuzzleHttp\Utils::jsonEncode(ObjectSerializer::sanitizeForSerialization($security_level_insert_dto));
+                $httpBody = json_encode(ObjectSerializer::sanitizeForSerialization($security_level_insert_dto));
             } else {
                 $httpBody = $security_level_insert_dto;
             }
@@ -897,7 +897,7 @@ class BezpenostnRovnApi
 
             } elseif (stripos($headers['Content-Type'], 'application/json') !== false) {
                 # if Content-Type contains "application/json", json_encode the form parameters
-                $httpBody = \GuzzleHttp\Utils::jsonEncode($formParams);
+                $httpBody = json_encode($formParams);
             } else {
                 // for HTTP post (form)
                 $httpBody = ObjectSerializer::buildQuery($formParams);
@@ -1181,7 +1181,7 @@ class BezpenostnRovnApi
         if (isset($security_level_multi_add_user_edit_dto)) {
             if (stripos($headers['Content-Type'], 'application/json') !== false) {
                 # if Content-Type contains "application/json", json_encode the body
-                $httpBody = \GuzzleHttp\Utils::jsonEncode(ObjectSerializer::sanitizeForSerialization($security_level_multi_add_user_edit_dto));
+                $httpBody = json_encode(ObjectSerializer::sanitizeForSerialization($security_level_multi_add_user_edit_dto));
             } else {
                 $httpBody = $security_level_multi_add_user_edit_dto;
             }
@@ -1202,7 +1202,7 @@ class BezpenostnRovnApi
 
             } elseif (stripos($headers['Content-Type'], 'application/json') !== false) {
                 # if Content-Type contains "application/json", json_encode the form parameters
-                $httpBody = \GuzzleHttp\Utils::jsonEncode($formParams);
+                $httpBody = json_encode($formParams);
             } else {
                 // for HTTP post (form)
                 $httpBody = ObjectSerializer::buildQuery($formParams);
@@ -1486,7 +1486,7 @@ class BezpenostnRovnApi
         if (isset($security_level_multi_remove_user_edit_dto)) {
             if (stripos($headers['Content-Type'], 'application/json') !== false) {
                 # if Content-Type contains "application/json", json_encode the body
-                $httpBody = \GuzzleHttp\Utils::jsonEncode(ObjectSerializer::sanitizeForSerialization($security_level_multi_remove_user_edit_dto));
+                $httpBody = json_encode(ObjectSerializer::sanitizeForSerialization($security_level_multi_remove_user_edit_dto));
             } else {
                 $httpBody = $security_level_multi_remove_user_edit_dto;
             }
@@ -1507,7 +1507,7 @@ class BezpenostnRovnApi
 
             } elseif (stripos($headers['Content-Type'], 'application/json') !== false) {
                 # if Content-Type contains "application/json", json_encode the form parameters
-                $httpBody = \GuzzleHttp\Utils::jsonEncode($formParams);
+                $httpBody = json_encode($formParams);
             } else {
                 // for HTTP post (form)
                 $httpBody = ObjectSerializer::buildQuery($formParams);
